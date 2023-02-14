@@ -1,0 +1,1115 @@
+@charset "utf-8";
+
+/*
+***********************************
+* Template Name: headp - Apps and Products Landing Page
+* Author Name: Prantok104
+* Support: prantok104@gmail.com
+* Version: 1.0.0
+
+* This file contains the styling for the actual theme, this is the file you need to edit to change the look of the theme.
+
+The contents of This file are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+*** CSS TABLE
+
+01. IMPORT CSS
+02. DEFAULT CSS
+03. PRELOADER CSS
+04. BTM TO TOP CSS
+05. HEADER CSS
+06. HERO CSS
+07. PROJECT TITLE CSS
+08. FEATURES CSS
+09. FULL FEATURES CSS
+10. ABOUT CSS
+11. DOWNLOAD CSS
+12. WHY CHOOSE CSS
+13. PRODUCTS CSS
+14. NEWSLATER CSS
+15. FAQ CSS
+16. PRODUCT COUNT CSS
+17. CLINET CSS
+18. CONTACT CSS
+19. FOOTER CSS
+
+ */
+/*-----------------------------------
+01. IMPORT CSS
+-------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;800;900&amp;family=Poppins:wght@200;300;400;500&amp;display=swap");
+
+/*-----------------------------------
+02. DEFAULT CSS
+-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+p,
+address,
+span,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+address {
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+}
+
+.margin-top {
+  margin-top: 80px;
+}
+
+.margin-bottom {
+  margin-bottom: 80px;
+}
+
+.margin-both {
+  margin: 80px 0px;
+}
+
+.padding-top {
+  padding-top: 80px;
+}
+
+.padding-bottom {
+  padding-bottom: 80px;
+}
+
+.padding-both {
+  padding: 80px 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a.df-btn {
+  padding: 15px 35px;
+  background: #2374f8;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.mouse-move {
+  transform-style: preserve-3d;
+}
+
+.animateupdown {
+  position: relative;
+  animation: animateupdown 2s ease-in-out infinite;
+}
+
+@keyframes animateupdown {
+  0% {
+    top: 15px;
+  }
+
+  50% {
+    top: -15px;
+  }
+
+  100% {
+    top: 15px;
+  }
+}
+
+.df-bg {
+  background: #f8f8ff;
+}
+
+a.df-btn:hover {
+  background: #093783;
+  transition: 0.3s ease-in-out;
+}
+
+a.df-btn i {
+  margin-right: 5px;
+}
+
+/*-----------------------------------
+03. PRELOADER CSS
+-------------------------------------*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #2374f8;
+  z-index: 9999999999;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: 44vh auto;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader .inner {
+  width: 100%;
+  height: 100%;
+  border: 50px solid transparent;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 0.3s spin infinite linear;
+}
+
+.loader .inner:nth-child(1) {
+  border-left-color: #fff;
+  opacity: 0.25;
+}
+
+.loader .inner:nth-child(2) {
+  animation-direction: reverse;
+  animation-duration: 2.5s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-----------------------------------
+04. BTM TO TOP CSS
+-------------------------------------*/
+a.btm-to-top {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fff;
+  background: #2374f8;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 25px;
+  bottom: 40px;
+  z-index: 999999999;
+}
+
+/*-----------------------------------
+05. HEADER CSS
+-------------------------------------*/
+
+header.headp-header-area-start {
+  padding: 15px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+  background: transparent;
+}
+
+.headp-logo-area-start a {
+  display: inline-block;
+}
+
+.headp-logo-area-start a > img {
+  width: 68px;
+  height: 50px;
+}
+
+nav ul.headp-main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul.headp-main-menu li a {
+  color: #222;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #fff;
+}
+
+nav ul.headp-main-menu li:last-child a.nav-link {
+  padding-right: 0;
+}
+
+header.headp-header-area-start.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 20px 2px #f2f2f2;
+  animation: fadeInDown 1s both;
+  animation-timing-function: ease-in-out;
+}
+
+header.headp-header-area-start.sticky ul.headp-main-menu li a,
+header.headp-header-area-start.sticky ul.headp-main-menu li a:hover {
+  color: #222;
+  transition: 0.3s ease-in-out;
+}
+
+header.headp-header-area-start.sticky ul.headp-main-menu li a:hover {
+  color: #2374f8;
+  transition: 0.3s ease-in-out;
+}
+
+header.headp-header-area-start.sticky ul.headp-main-menu li a.active {
+  color: #2374f8;
+}
+
+/*-----------------------------------
+06. HERO CSS
+-------------------------------------*/
+section.headp-hero-area-start {
+  height: 95vh;
+}
+
+.bg-shape {
+  width: 100%;
+  height: 180%;
+  position: absolute;
+  background: #2374f8;
+  border-radius: 150px;
+  transform: translate(30%, -26%) rotate(-42deg);
+  bottom: 0;
+  right: 9px;
+}
+
+.headp-hero-image-area-start {
+  height: 85vh;
+  width: 100%;
+  margin-top: 75px;
+  position: relative;
+}
+
+.headp-hero-image-area-start .single-image {
+  width: 100%;
+  height: 83vh;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.headp-hero-image-area-start .owl-dots {
+  position: absolute;
+  right: 15px;
+  bottom: 40px;
+}
+
+.headp-hero-text-area span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.headp-hero-text-area h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 61px;
+  margin-bottom: 25px;
+}
+
+.headp-hero-text-area p {
+  width: 89%;
+  margin-bottom: 25px;
+}
+
+.headp-hero-text-area a.df-btn {
+  padding: 15px 35px;
+  background: #2374f8;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.headp-hero-text-area a.df-btn i {
+  margin-right: 5px;
+}
+
+.headp-hero-text-area a.df-btn:hover {
+  background: #093783;
+  transition: 0.3s ease-in-out;
+}
+
+/*-----------------------------------
+07. PROJECT TITLE CSS
+-------------------------------------*/
+.headp-project-title h4 {
+  background: #2374f826;
+  color: #2374f8;
+  font-size: 13px;
+  padding: 4px 20px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.headp-project-title h1 {
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+  text-transform: capitalize;
+}
+
+.headp-project-title {
+  margin-bottom: 60px;
+}
+
+.headp-project-title span {
+  width: 100px;
+  height: 5px;
+  background: #2374f8;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.headp-project-title span:after {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  content: "";
+  border-radius: 50%;
+  background: #fff;
+  animation: runleftright 5s ease infinite;
+}
+
+@keyframes runleftright {
+  0% {
+    left: -15px;
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+/*-----------------------------------
+08. FEATURES CSS
+-------------------------------------*/
+
+.headp-feature-area-start {
+  background: url("../images/shape-2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.headp-single-feature {
+  transform-style: preserve-3d;
+  transition: 0.3s ease-in-out;
+}
+
+.headp-single-feature:hover {
+  box-shadow: 0 4px 15px 7px #f2f2f2;
+}
+
+.headp-single-feature i {
+  width: 75px;
+  height: 75px;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-size: 50px;
+  color: #2374f8;
+  position: relative;
+  z-index: 1;
+  background: #2374f824;
+  border-radius: 5px;
+  transform: translateZ(20px);
+}
+
+.headp-single-feature i:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #2374f817;
+  z-index: -1;
+  color: #2374f8;
+  transform: rotate(45deg);
+  border-radius: 5px;
+}
+
+.headp-single-feature h4 {
+  margin: 20px 0 10px 0;
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  transform: translateZ(20px);
+}
+
+.headp-single-feature:hover h4 {
+  color: #2374f8;
+  transition: 0.3s ease-in-out;
+}
+
+.headp-single-feature p {
+  line-height: 24px;
+  transform: translateZ(20px);
+}
+
+/*-----------------------------------
+09. FULL FEATURES CSS
+-------------------------------------*/
+.headp-full-feature-content h1,
+.headp-download-content h1 {
+  font-size: 60px;
+  line-height: 61px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+ul.headp-full-feature-list li {
+  display: block;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+ul.headp-full-feature-list li i {
+  width: 10%;
+  float: left;
+  font-size: 29px;
+  margin-top: 1px;
+  color: #2374f8;
+}
+
+ul.headp-full-feature-list li span {
+  width: 90%;
+  float: left;
+}
+
+.headp-full-feature-content a.df-btn {
+  margin-top: 35px;
+}
+
+/*-----------------------------------
+10. ABOUT CSS
+-------------------------------------*/
+.headp-about-area {
+  background: url("../images/shape-3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+/*-----------------------------------
+11. DOWNLOAD CSS
+-------------------------------------*/
+section.headp-download-area-start {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+section.headp-download-area-start:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #2374f8;
+  content: "";
+  z-index: -1;
+}
+
+.headp-download-content p {
+  margin-bottom: 25px;
+}
+
+.headp-download-content a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.headp-download-content a > img {
+  width: 185px;
+}
+
+/*-----------------------------------
+12. WHY CHOOSE CSS
+-------------------------------------*/
+
+ul.choose-list li.active {
+  color: #fff;
+  border-radius: 7px;
+  position: relative;
+  z-index: -1;
+}
+
+ul.choose-list li.active:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #2374f8;
+  z-index: -9999;
+}
+
+ul.choose-list li {
+  margin-bottom: 25px;
+  padding: 28px;
+  border: 1px solid #fff;
+  background: #deeafe;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+ul.choose-list li:hover {
+  background: #2374f8;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+ul.choose-list li .media-head i {
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 27px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: #2374f838;
+  color: #fff;
+}
+
+ul.choose-list li .media-head i:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #2374f826;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-radius: 5px;
+}
+
+ul.choose-list li .media-body h4 {
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.headp-product-slider {
+  padding: 15px;
+  height: 56vh;
+}
+
+.headp-single-product {
+  width: 100%;
+  height: 53vh;
+  margin: 25px 0;
+}
+
+.headp-product-content {
+  margin-top: 120px;
+}
+
+.headp-product-content h3 {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.headp-product-content p {
+  margin-bottom: 15px;
+}
+
+.headp-product-slider .owl-dots .owl-dot.active span {
+  width: 40px;
+  background: #2374f8 !important;
+  transition: 0.3s ease-in-out;
+}
+
+.headp-product-slider .owl-dots .owl-dot span {
+  background: none;
+  border: 1px solid #2374f8;
+}
+
+.headp-single-product a.df-btn {
+  position: absolute;
+  left: 36%;
+  bottom: 53%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateZ(20px);
+}
+
+.headp-single-product:hover a.df-btn {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*-----------------------------------
+13. PRODUCTS CSS
+-------------------------------------*/
+.single-product-slider .media-head {
+  width: 35%;
+}
+
+.single-product-slider {
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px 7px #f2f2f2;
+}
+
+.single-product-slider .media-body a.product-title {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.single-product-slider:hover a.product-title {
+  color: #2374f8;
+  transition: 0.3s ease-in-out;
+}
+
+.single-product-slider span.price {
+  font-weight: 700;
+  font-size: 25px;
+  color: #2374f8;
+  display: block;
+  margin: 10px 0;
+}
+
+.single-product-slider a.df-btn {
+  padding: 7px 14px;
+}
+
+ul.pagination li {
+  display: inline-block;
+}
+
+ul.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.pagination li a {
+  border: 1px solid #2374f8;
+  padding: 8px 16px;
+  margin-right: 15px;
+  background: #2374f8;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+ul.pagination li a:hover {
+  background: transparent;
+  color: #2374f8;
+  transition: 0.3s ease-in-out;
+}
+
+ul.pagination li:last-child a {
+  margin-right: 0;
+}
+
+ul.pagination li a.active {
+  background: transparent;
+  color: #2374f8;
+}
+
+/*-----------------------------------
+14. NEWSLATER CSS
+-------------------------------------*/
+.headp-newslater-text h1 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.headp-newslater-form.text-right {
+  position: relative;
+}
+.headp-newslater-form form input {
+  width: 100%;
+  height: 52px;
+  padding-left: 18px;
+  border: 1px solid#ddd;
+  border-radius: 50px;
+  outline: 0;
+  box-shadow: 0px 0px 15px 0px rgba(52, 69, 199, 0.4);
+}
+
+.headp-newslater-form form button.headp-news-btn {
+  position: absolute;
+  border: 0;
+  background: #2374f8;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 17px;
+  border-radius: 30px;
+  right: 21px;
+  top: 5px;
+  font-size: 12px;
+  outline: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.headp-newslater-form form button.headp-news-btn:hover {
+  background: #093783;
+  transition: 0.3s ease-in-out;
+}
+
+.headp-newslater-form form button.headp-news-btn i {
+  margin-right: 5px;
+}
+
+/*-----------------------------------
+15. FAQ CSS
+-------------------------------------*/
+.headp-faq-content-area .card {
+  border: 0;
+  margin-bottom: 25px;
+}
+
+.headp-faq-content-area .card-body {
+  background: #deeafe;
+}
+
+.headp-faq-content-area .card-header {
+  padding: 0;
+}
+
+.headp-faq-content-area .card-header button {
+  padding: 10px;
+  display: block;
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize;
+  background: #2374f8;
+  text-decoration: none;
+  outline: 0;
+  padding: 15px 18px;
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-left: 5px solid #2374f8;
+}
+
+.headp-faq-content-area .card-header button.btn:focus {
+  box-shadow: none;
+}
+
+.headp-faq-content-area .card-header button:after {
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  content: "\f068";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  color: #fff;
+}
+
+.headp-faq-content-area .card-header button.collapsed:after {
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  content: "\f067";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  color: #fff;
+}
+
+.headp-faq-content-area .card-header button.collapsed {
+  transition: 0.3s ease-in-out;
+}
+
+.headp-faq-content-area .card-header button.collapsed {
+  background: #609bfa6b;
+  color: #222;
+}
+
+.headp-faq-content-area .card-header button:before {
+  position: absolute;
+  right: -17px;
+  top: -6px;
+  width: 84px;
+  content: "";
+  height: 191%;
+  transform: rotate(23deg);
+  background: #2374f8;
+  z-index: -1;
+}
+
+/*-----------------------------------
+16. PRODUCT COUNT CSS
+-------------------------------------*/
+.single-product-count {
+  background: #fff;
+  padding: 45px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px 7px #f2f2f2;
+}
+
+.single-product-count .media-head i {
+  color: #2374f8;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0ebfe;
+  margin-right: 17px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+.single-product-count .media-head i:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #cfe0fd;
+  content: "";
+  transform: rotate(45deg);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+span.counter {
+  font-weight: 900;
+  font-size: 45px;
+  display: inline-block;
+  margin-bottom: 21px;
+  color: #2374f8;
+}
+
+.single-product-count .media-body p {
+  font-size: 41px;
+  color: #2374f8;
+  font-weight: 900;
+}
+
+/*-----------------------------------
+17. CLINET CSS
+-------------------------------------*/
+.headp-client-area-start {
+  background: url("../images/shape-2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.headp-client-slider.owl-carousel .owl-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid #2374f8;
+  margin: 21px auto;
+}
+
+.single-clinet-slider .reviews i {
+  color: #f39c12;
+}
+
+.headp-client-slider .owl-nav [class*="owl-"] {
+  width: 40px;
+  background: #2374f8;
+}
+
+.headp-client-slider .owl-nav [class*="owl-"]:hover {
+  background: #2374f8;
+}
+
+.headp-client-slider .owl-nav [class*="owl-"] i {
+  font-size: 30px;
+}
+
+/*-----------------------------------
+18. CONTACT CSS
+-------------------------------------*/
+.headp-contact-area-start {
+  background: url("../images/map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.headp-contact-area-start:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: #f8f8ff;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.headp-single-contact-form .media-head i {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #2374f8;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 29px;
+  background: #2374f8;
+  color: #fff;
+}
+
+.headp-single-contact-form {
+  margin-bottom: 25px;
+}
+
+.headp-single-contact-form .media-body span {
+  display: block;
+  margin-top: 5px;
+}
+
+button.cnt-btn {
+  padding: 15px 35px;
+  border: none;
+  background: #2374f8;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+button.cnt-btn:hover {
+  background: #093783;
+  transition: 0.3s ease-in-out;
+}
+
+button.cnt-btn i {
+  margin-right: 5px;
+}
+
+/*-----------------------------------
+19. FOOTER CSS
+-------------------------------------*/
+footer.footer-area-start {
+  background: #131418;
+  color: #fff;
+  position: relative;
+}
+
+footer.footer-area-start ul.social-lists li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 50%;
+  background: #2374f8;
+}
+
+footer.footer-area-start img.footer-logo {
+  width: 68px;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+footer.footer-area-start ul.social-lists li a.facebook {
+  background: #0f8ff2;
+}
+
+footer.footer-area-start ul.social-lists li a.twitter {
+  background: #1da1f2;
+}
+
+footer.footer-area-start ul.social-lists li a.instagram {
+  background: #664dcc;
+}
+
+footer.footer-area-start ul.social-lists li a.linkedin {
+  background: #0a66c2;
+}
+
+footer.footer-area-start ul.social-lists li a.youtube {
+  background: #ff0202;
+}
