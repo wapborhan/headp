@@ -30,7 +30,7 @@ function App() {
       <ProductCount />
       <Contact />
       <Footer />
-      {/* <DarkMode /> */}
+      <DarkMode />
     </Fragment>
   );
 }
