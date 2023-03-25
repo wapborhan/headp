@@ -1,4 +1,5 @@
 import React from "react";
+import HeroImg from "../../assets/images/hero.png";
 
 const Banner = () => {
   return (
@@ -7,7 +8,7 @@ const Banner = () => {
       <div className="container">
         <div className="row align-items-center">
           {/* <!--headp-hero-text-area start--> */}
-          <div className="col-md-7 col-lg-7 col-12">
+          <div className="col-md-6 col-lg-5 col-12">
             <div className="headp-hero-text-area">
               <span>headphone</span>
               <h1>Superior Sound, Tangible Quality</h1>
@@ -24,11 +25,13 @@ const Banner = () => {
           </div>
           {/* <!--headp-hero-text-area end--> */}
           {/* <!--headp-hero-image-area-start--> */}
-          <div className="col-md-5 col-lg-5 col-12">
+          <div className="col-md-5 col-lg-7 col-12">
             <div className="headp-hero-image-area-start owl-carousel owl-theme">
               <div
                 className="single-image animateupdown mouse-move"
-                // style="background: url('assets/images/hero.png') no-repeat scroll left center / contain"
+                style={{
+                  background: `url('${HeroImg}') no-repeat scroll center center / contain`,
+                }}
               ></div>
               <div
                 className="single-image animateupdown mouse-move"
