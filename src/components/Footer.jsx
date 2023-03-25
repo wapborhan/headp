@@ -2,8 +2,9 @@ import React from "react";
 import FootLogo from "../assets/images/logo/logo-light.png";
 
 const Footer = () => {
+  const d = new Date();
   return (
-    <footer className="footer-area-start padding-both">
+    <footer className="footer-area-start padding-both pt-5 pb-5">
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
@@ -35,7 +36,16 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <p>Copyright &copy; 2021. All Rights Reserved</p>
+            <p>
+              Copyright &copy; {d.getFullYear()}. All Rights Reserved | Design
+              by{" "}
+              <a
+                className="text-white text-decoration-underline"
+                href="https://www.srdreamlab.com"
+              >
+                SR Dream Lab
+              </a>
+            </p>
 
             {/* <!--Btm to top Btn start--> */}
             <a href="#home" className="nav-link js-scroll-trigger btm-to-top">

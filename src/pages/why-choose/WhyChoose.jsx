@@ -22,7 +22,7 @@ const WhyChoose = () => {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head">
                       <i className="fal fa-backpack"></i>
                     </div>
@@ -36,7 +36,7 @@ const WhyChoose = () => {
                   </div>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="1800">
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head">
                       <i className="fal fa-volume-up"></i>
                     </div>
@@ -50,7 +50,7 @@ const WhyChoose = () => {
                   </div>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="2600">
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head">
                       <i className="fal fa-headphones-alt"></i>
                     </div>

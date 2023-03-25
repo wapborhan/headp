@@ -1,4 +1,5 @@
 import React from "react";
+import ProImg from "../../assets/images/product-1.png";
 
 const ProductCount = () => {
   return (
@@ -8,7 +9,7 @@ const ProductCount = () => {
           <div className="col-md-5">
             <div className="headp-product-count-image">
               <img
-                src="assets/images/product-1.png"
+                src={ProImg}
                 alt="product"
                 className="mouse-move animateupdown"
                 data-aos="fade-right"
@@ -32,7 +33,7 @@ const ProductCount = () => {
                   data-aos="fade-up"
                   data-aos-duration="1500"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head align-self-center">
                       <i className="fal fa-backpack"></i>
                     </div>
@@ -51,7 +52,7 @@ const ProductCount = () => {
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head align-self-center">
                       <i className="fal fa-award"></i>
                     </div>
@@ -70,7 +71,7 @@ const ProductCount = () => {
                   data-aos="fade-up"
                   data-aos-duration="2400"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head align-self-center">
                       <i className="fal fa-smile"></i>
                     </div>
@@ -89,7 +90,7 @@ const ProductCount = () => {
                   data-aos="fade-up"
                   data-aos-duration="2900"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head align-self-center">
                       <i className="fal fa-female"></i>
                     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFingerprint, FaRegComments } from "react-icons/fa";
 
 const Feature = () => {
   return (
@@ -18,13 +17,11 @@ const Feature = () => {
           {/* <!--Single feature area start--> */}
           <div
             className="col-md-4 col-lg-4 col-sm-6 col-12"
-            data-aos="fade-up"
-            data-aos-duration="1000"
+            dataAos="fade-up"
+            dataAosDuration="1000"
           >
             <div className="headp-single-feature text-center p-4 mouse-move">
-              <i className="fal fa-fingerprint">
-                <FaFingerprint />
-              </i>
+              <i className="fal fa-fingerprint"></i>
               <h4>Secure data</h4>
               <p>
                 Voluptatum aliquid reprehenderit quae veritatis minima hic,
@@ -40,9 +37,7 @@ const Feature = () => {
             data-aos-duration="1500"
           >
             <div className="headp-single-feature text-center p-4 mouse-move">
-              <i>
-                <FaRegComments />
-              </i>
+              <i class="fal fa-comments-alt"></i>
               <h4>instant chat</h4>
               <p>
                 Voluptatum aliquid reprehenderit quae veritatis minima hic,

@@ -1,4 +1,5 @@
 import React from "react";
+
 import ProductImg1 from "../../assets/images/product-1.png";
 import ProductImg2 from "../../assets/images/product-2.png";
 import ProductImg3 from "../../assets/images/product-3.png";
@@ -91,18 +92,15 @@ const Product = () => {
                               70 mm HD driver
                             </a>
                             <ul>
-                              <li>
-                                <i className="fal fa-check-circle"></i>Hard case
-                                for storage
-                              </li>
-                              <li>
-                                <i className="fal fa-check-circle"></i>{" "}
-                                Silver-coated oxygen-free copper
-                              </li>
-                              <li>
-                                <i className="fal fa-check-circle"></i> 4.4Φ
-                                balanced connection cable
-                              </li>
+                              {item.desc.map((des) => {
+                                console.log(des);
+                                return (
+                                  <li>
+                                    <i className="fal fa-check-circle"></i>
+                                    Hard case for storage
+                                  </li>
+                                );
+                              })}
                             </ul>
                             <span className="price">$ 150</span>
                             <a href="#" className="df-btn">

@@ -43,6 +43,29 @@ The contents of This file are outlined below >>>>
 -------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;800;900&amp;family=Poppins:wght@200;300;400;500&amp;display=swap");
 
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --dark-mode-primary-color: #5a5a5a;
+  --dark-mode-secondary-color: #fff;
+  --dark-mode-background-color: #212529;
+  --dark-mode-text-color: #fff;
+}
+.light-mode {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+}
+
+.dark-mode {
+  --primary-color: var(--dark-mode-primary-color);
+  --secondary-color: var(--dark-mode-secondary-color);
+  --background-color: var(--dark-mode-background-color);
+  --text-color: var(--dark-mode-text-color);
+}
 /*-----------------------------------
 02. DEFAULT CSS
 -------------------------------------*/
@@ -131,6 +154,35 @@ img {
 
 body {
   overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.dark-mode button {
+  background-color: var(--dark-mode-primary-color);
+  color: var(--dark-mode-secondary-color);
+}
+
+.dark-mode body {
+  background-color: var(--dark-mode-background-color);
+  color: var(--dark-mode-text-color);
+}
+
+button.dark-btn {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 55px);
+  outline: 0;
+  border: none;
+  z-index: 99;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #2374f8;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a.df-btn {
@@ -140,6 +192,7 @@ a.df-btn {
   text-transform: uppercase;
   font-size: 14px;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
 }
 
 .mouse-move {
@@ -167,6 +220,10 @@ a.df-btn {
 
 .df-bg {
   background: #f8f8ff;
+}
+.dark-mode .df-bg {
+  background-color: var(--dark-mode-background-color);
+  color: var(--dark-mode-text-color);
 }
 
 a.df-btn:hover {
@@ -289,7 +346,10 @@ nav ul.headp-main-menu li a {
 nav ul.headp-main-menu li:last-child a.nav-link {
   padding-right: 0;
 }
-
+a.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
 header.headp-header-area-start.sticky {
   position: fixed;
   top: 0;
@@ -300,7 +360,15 @@ header.headp-header-area-start.sticky {
   animation: fadeInDown 1s both;
   animation-timing-function: ease-in-out;
 }
-
+.dark-mode header.headp-header-area-start.sticky {
+  background-color: var(--dark-mode-background-color);
+  box-shadow: 0px 0px 20px 2px #1a1a1a;
+}
+.dark-mode header.headp-header-area-start.sticky ul.headp-main-menu li a,
+header.headp-header-area-start.sticky ul.headp-main-menu li a:hover {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
 header.headp-header-area-start.sticky ul.headp-main-menu li a,
 header.headp-header-area-start.sticky ul.headp-main-menu li a:hover {
   color: #222;
@@ -518,7 +586,7 @@ section.headp-hero-area-start {
 -------------------------------------*/
 .headp-full-feature-content h1,
 .headp-download-content h1 {
-  font-size: 60px;
+  font-size: 65px;
   line-height: 61px;
   font-weight: 700;
   text-transform: capitalize;
@@ -537,6 +605,7 @@ ul.headp-full-feature-list li i {
   font-size: 29px;
   margin-top: 1px;
   color: #2374f8;
+  display: flex;
 }
 
 ul.headp-full-feature-list li span {
@@ -631,6 +700,20 @@ ul.choose-list li:hover {
   color: #fff;
   transition: 0.3s ease-in-out;
 }
+ul.choose-list li:hover .media-head i:after {
+  background: #f7f7f775;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+ul.choose-list li:hover .media-head i {
+  background: #f7f7f775;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+ul.choose-list li:hover .media-head i svg {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
 
 ul.choose-list li .media-head i {
   font-size: 28px;
@@ -646,6 +729,20 @@ ul.choose-list li .media-head i {
   background: #2374f838;
   color: #fff;
 }
+ul.choose-list li.active .media-head i {
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 27px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: #f7f7f775;
+  color: #fff;
+}
 
 ul.choose-list li .media-head i:after {
   position: absolute;
@@ -655,6 +752,18 @@ ul.choose-list li .media-head i:after {
   height: 100%;
   content: "";
   background: #2374f826;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-radius: 5px;
+}
+ul.choose-list li.active .media-head i:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #f7f7f775;
   z-index: 1;
   transform: rotate(45deg);
   border-radius: 5px;
@@ -818,7 +927,7 @@ ul.pagination li a.active {
   text-transform: uppercase;
   padding: 12px 17px;
   border-radius: 30px;
-  right: 21px;
+  right: 5px;
   top: 5px;
   font-size: 12px;
   outline: 0;
@@ -1086,6 +1195,7 @@ footer.footer-area-start ul.social-lists li a {
   color: #fff;
   border-radius: 50%;
   background: #2374f8;
+  margin-right: 8px;
 }
 
 footer.footer-area-start img.footer-logo {

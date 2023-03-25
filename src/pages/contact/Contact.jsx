@@ -28,7 +28,7 @@ const Contact = () => {
                   data-aos="fade-up"
                   data-aos-duration="2500"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head">
                       <i className="fal fa-phone"></i>
                     </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                   data-aos="fade-up"
                   data-aos-duration="2200"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head">
                       <i className="fal fa-envelope"></i>
                     </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                   data-aos="fade-up"
                   data-aos-duration="2900"
                 >
-                  <div className="media">
+                  <div className="d-flex">
                     <div className="media-head">
                       <i className="fal fa-map-marker"></i>
                     </div>

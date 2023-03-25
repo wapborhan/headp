@@ -11,10 +11,13 @@ import WhyChoose from "./pages/why-choose/WhyChoose";
 import ProductCount from "./pages/product-count/ProductCount";
 import Contact from "./pages/contact/Contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import DarkMode from "./components/DarkMode";
 
 function App() {
   return (
     <Fragment>
+      <Header />
       <Banner />
       <Feature />
       <FullFeature />
@@ -27,6 +30,7 @@ function App() {
       <ProductCount />
       <Contact />
       <Footer />
+      {/* <DarkMode /> */}
     </Fragment>
   );
 }

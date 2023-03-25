@@ -42,11 +42,11 @@ const About = () => {
                   <span> Silver-coated oxygen-free copper</span>
                 </li>
                 <li>
-                  <i className="fal fa-check-circle"></i>
+                  <i className="fal fa-check-circle"> </i>
                   <span> 4.4Φ balanced connection cable</span>
                 </li>
                 <li>
-                  <i className="fal fa-check-circle"></i>
+                  <i className="fal fa-check-circle"> </i>
                   <span>
                     {" "}
                     Smart listening experience by Adaptive Sound Control

@@ -1,5 +1,6 @@
 import React from "react";
 import FeatureImg from "../../assets/images/product-2.png";
+import { FaRegCheckCircle } from "react-icons/fa";
 
 const FullFeature = () => {
   return (

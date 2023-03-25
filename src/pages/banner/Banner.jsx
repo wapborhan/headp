@@ -1,6 +1,5 @@
 import React from "react";
 import HeroImg from "../../assets/images/hero.png";
-import { FaShoppingBag } from "react-icons/fa";
 
 const Banner = () => {
   return (
@@ -20,10 +19,7 @@ const Banner = () => {
                 experience.
               </p>
               <a href="#" className="df-btn">
-                <i className="fal fa-shopping-bag">
-                  <FaShoppingBag />
-                </i>{" "}
-                buy products
+                <i className="fal fa-shopping-bag"></i> buy products
               </a>
             </div>
           </div>
