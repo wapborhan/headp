@@ -17,12 +17,12 @@ function App() {
   };
   const soon = (
     <>
-      <i class="fal fa-light fa-sun"></i>
+      <i className="fal fa-light fa-sun"></i>
     </>
   );
   const moon = (
     <>
-      <i class="fa-regular fal fa-moon"></i>
+      <i className="fa-regular fal fa-moon"></i>
     </>
   );
   return (

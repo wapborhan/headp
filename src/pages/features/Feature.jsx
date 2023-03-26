@@ -15,11 +15,7 @@ const Feature = () => {
           </div>
           {/* <!--Project title area end--> */}
           {/* <!--Single feature area start--> */}
-          <div
-            className="col-md-4 col-lg-4 col-sm-6 col-12"
-            dataAos="fade-up"
-            dataAosDuration="1000"
-          >
+          <div className="col-md-4 col-lg-4 col-sm-6 col-12">
             <div className="headp-single-feature text-center p-4 mouse-move">
               <i className="fal fa-fingerprint"></i>
               <h4>Secure data</h4>
@@ -37,7 +33,7 @@ const Feature = () => {
             data-aos-duration="1500"
           >
             <div className="headp-single-feature text-center p-4 mouse-move">
-              <i class="fal fa-comments-alt"></i>
+              <i className="fal fa-comments-alt"></i>
               <h4>instant chat</h4>
               <p>
                 Voluptatum aliquid reprehenderit quae veritatis minima hic,

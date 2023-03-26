@@ -92,10 +92,9 @@ const Product = () => {
                               70 mm HD driver
                             </a>
                             <ul>
-                              {item.desc.map((des) => {
-                                console.log(des);
+                              {item.desc.map((des, idf) => {
                                 return (
-                                  <li>
+                                  <li key={idf}>
                                     <i className="fal fa-check-circle"></i>
                                     Hard case for storage
                                   </li>

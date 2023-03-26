@@ -154,8 +154,9 @@ img {
 
 body {
   overflow-x: hidden;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   color: var(--text-color);
+  transition: all 0.3s ease-out;
 }
 .dark-mode button {
   background-color: var(--dark-mode-primary-color);
@@ -165,8 +166,15 @@ body {
 .dark-mode body {
   background-color: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
+  transition: all linear 0.3s;
 }
-
+.dark-mode .form-control {
+  background-color: var(--dark-mode-background-color);
+  color: var(--dark-mode-text-color);
+}
+.dark-mode .headp-project-title span:after {
+  background-color: #212121;
+}
 button.dark-btn {
   position: fixed;
   right: 0;
@@ -300,7 +308,7 @@ a.btm-to-top {
   background: #2374f8;
   border-radius: 50%;
   color: #fff;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -349,6 +357,7 @@ nav ul.headp-main-menu li:last-child a.nav-link {
 a.nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 header.headp-header-area-start.sticky {
   position: fixed;
@@ -388,7 +397,7 @@ header.headp-header-area-start.sticky ul.headp-main-menu li a.active {
 06. HERO CSS
 -------------------------------------*/
 section.headp-hero-area-start {
-  height: 95vh;
+  height: 100vh;
 }
 
 .bg-shape {
@@ -515,8 +524,21 @@ section.headp-hero-area-start {
 /*-----------------------------------
 08. FEATURES CSS
 -------------------------------------*/
-.dark-mode .headp-feature-area-start {
-  background: none !important;
+
+.dark-mode .headp-why-shoose-area-start,
+.dark-mode .headp-newslater-area-start,
+.dark-mode .headp-contact-area-start {
+  background-color: var(--dark-mode-background-color) !important;
+  background: url("");
+}
+.dark-mode .headp-faq-area-start,
+.dark-mode .headp-about-area,
+.dark-mode .headp-feature-area-start,
+.dark-mode .headp-contact-area-start,
+.dark-mode .headp-product-area-start,
+.dark-mode .headp-contact-area-start:after {
+  background-color: #212121 !important;
+  background: url("");
 }
 
 .headp-feature-area-start {
@@ -537,9 +559,12 @@ section.headp-hero-area-start {
   box-shadow: 0 4px 15px 7px #f2f2f2;
 }
 .dark-mode .headp-single-feature:hover {
-  box-shadow: 0 0 20px 3px rgb(52 52 52);
+  box-shadow: 0 0 20px 3px #1c1c1c;
 }
 
+.dark-mode .news-bg {
+  background-color: #1c1c1c !important;
+}
 .headp-single-feature i {
   width: 75px;
   height: 75px;
@@ -702,6 +727,10 @@ ul.choose-list li {
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
+.dark-mode ul.choose-list li {
+  border: 1px solid #fff;
+  background: #212121;
+}
 
 ul.choose-list li:hover {
   background: #2374f8;
@@ -845,6 +874,12 @@ ul.choose-list li .media-body h4 {
   border-radius: 10px;
   box-shadow: 0 4px 15px 7px #f2f2f2;
 }
+.dark-mode .single-product-slider,
+.dark-mode .single-product-count {
+  background-color: var(--dark-mode-background-color);
+
+  box-shadow: 0 4px 15px 7px #1c1c1c;
+}
 
 .single-product-slider .media-body a.product-title {
   text-transform: capitalize;
@@ -962,6 +997,12 @@ ul.pagination li a.active {
 .headp-faq-content-area .card-body {
   background: #deeafe;
 }
+.dark-mode .headp-faq-content-area .card-body {
+  background: #212529;
+  border-bottom: 1px solid #a9a9a9;
+  border-left: 1px solid #a9a9a9;
+  border-right: 1px solid #a9a9a9;
+}
 
 .headp-faq-content-area .card-header {
   padding: 0;
@@ -970,7 +1011,7 @@ ul.pagination li a.active {
 .headp-faq-content-area .card-header button {
   padding: 10px;
   display: block;
-  border-radius: 0;
+  /* border-radius: 0; */
   width: 100%;
   text-align: left;
   color: #fff;

@@ -18,7 +18,7 @@ const WhyChoose = () => {
             <div className="headp-why-choose-content">
               <ul className="choose-list">
                 <li
-                  className="active"
+                  // className="active"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >

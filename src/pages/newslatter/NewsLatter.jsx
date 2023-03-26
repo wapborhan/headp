@@ -4,7 +4,7 @@ const NewsLatter = () => {
   return (
     <section className="headp-newslater-area-start padding-both">
       <div className="container">
-        <div className="row align-items-center bg-light p-5 rounded">
+        <div className="row align-items-center news-bg bg-light p-5 rounded">
           <div className="col-md-6">
             <div className="headp-newslater-text">
               <h1>subscribe our newslater</h1>

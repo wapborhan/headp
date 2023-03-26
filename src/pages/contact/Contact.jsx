@@ -132,11 +132,7 @@ const Contact = () => {
                 </div>
                 <div className="col-md-12">
                   <br />
-                  <button
-                    type="button"
-                    className="df-btn cnt-btn"
-                    onclick="sendContact()"
-                  >
+                  <button type="button" className="df-btn cnt-btn">
                     <i className="fal fa-envelope"></i> Message
                   </button>
                   <div

@@ -1,5 +1,6 @@
 import React from "react";
 import FootLogo from "../assets/images/logo/logo-light.png";
+import BackToTop from "./BackToTop";
 
 const Footer = () => {
   const d = new Date();
@@ -48,9 +49,11 @@ const Footer = () => {
             </p>
 
             {/* <!--Btm to top Btn start--> */}
-            <a href="#home" className="nav-link js-scroll-trigger btm-to-top">
-              <i className="fas fa-angle-up"></i>
-            </a>
+            {/* <a href="#home" className="nav-link js-scroll-trigger btm-to-top">
+         
+            </a> */}
+            <BackToTop />
+
             {/* <!--Btm to top Btn end--> */}
           </div>
         </div>

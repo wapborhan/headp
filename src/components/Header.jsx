@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-scroll";
 import HeadImg from "../assets/images/logo/logo-color.png";
 
 const Header = () => {
@@ -39,39 +40,74 @@ const Header = () => {
             <nav className="headp-navigation-area-start text-right">
               <ul className="headp-main-menu trigger">
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger active" href="#home">
+                  <Link
+                    className="nav-link js-scroll-trigger"
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                  >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link " href="#feature">
+                  <Link
+                    className="nav-link "
+                    activeClass="active"
+                    to="feature"
+                    spy={true}
+                  >
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#about">
+                  <Link
+                    className="nav-link js-scroll-trigger"
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                  >
                     about
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#product">
+                  <Link
+                    className="nav-link js-scroll-trigger"
+                    activeClass="active"
+                    to="product"
+                    spy={true}
+                  >
                     product
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#faq">
+                  <Link
+                    className="nav-link js-scroll-trigger"
+                    activeClass="active"
+                    to="faq"
+                    spy={true}
+                  >
                     faq
-                  </a>
+                  </Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#testimonial">
+                {/* <li className="nav-item">
+                  <Link
+                    className="nav-link js-scroll-trigger"
+                    activeClass="active"
+                    to="testimonial"
+                    spy={true}
+                  >
                     testimonial
-                  </a>
-                </li>
+                  </Link>
+                </li> */}
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#contact">
+                  <Link
+                    className="nav-link js-scroll-trigger"
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                  >
                     contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
