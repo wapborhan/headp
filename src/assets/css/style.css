@@ -1011,7 +1011,7 @@ ul.pagination li a.active {
 .headp-faq-content-area .card-header button {
   padding: 10px;
   display: block;
-  /* border-radius: 0; */
+  border-radius: 0;
   width: 100%;
   text-align: left;
   color: #fff;
