@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true" ? true : false
+  );
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -10,11 +12,13 @@ function App() {
     } else {
       body.classList.remove("dark-mode");
     }
+    localStorage.setItem("darkMode", isDarkMode);
   }, [isDarkMode]);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
+
   const soon = (
     <>
       <i className="fal fa-light fa-sun"></i>
@@ -25,6 +29,7 @@ function App() {
       <i className="fa-regular fal fa-moon"></i>
     </>
   );
+
   return (
     <button className="dark-btn" onClick={toggleDarkMode}>
       {isDarkMode ? soon : moon}
