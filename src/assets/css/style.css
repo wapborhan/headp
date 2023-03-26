@@ -515,6 +515,9 @@ section.headp-hero-area-start {
 /*-----------------------------------
 08. FEATURES CSS
 -------------------------------------*/
+.dark-mode .headp-feature-area-start {
+  background: none !important;
+}
 
 .headp-feature-area-start {
   background: url("../images/shape-2.png");
@@ -526,10 +529,15 @@ section.headp-hero-area-start {
 .headp-single-feature {
   transform-style: preserve-3d;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 .headp-single-feature:hover {
   box-shadow: 0 4px 15px 7px #f2f2f2;
+}
+.dark-mode .headp-single-feature:hover {
+  box-shadow: 0 0 20px 3px rgb(52 52 52);
 }
 
 .headp-single-feature i {
