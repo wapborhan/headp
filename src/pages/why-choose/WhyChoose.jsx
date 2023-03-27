@@ -1,5 +1,8 @@
 import React from "react";
+// import OwlCarousel from "react-owl-carousel";
 import Img1 from "../../assets/images/product-1.png";
+import Img2 from "../../assets/images/product-2.png";
+import Img3 from "../../assets/images/product-3.png";
 
 const WhyChoose = () => {
   return (
