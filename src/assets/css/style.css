@@ -158,10 +158,6 @@ body {
   color: var(--text-color);
   transition: all 0.3s ease-out;
 }
-.dark-mode button {
-  background-color: var(--dark-mode-primary-color);
-  color: var(--dark-mode-secondary-color);
-}
 
 .dark-mode body {
   background-color: var(--dark-mode-background-color);
@@ -229,6 +225,13 @@ a.df-btn {
 .df-bg {
   background: #f8f8ff;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .df-bg {
+    background: transparent;
+  }
+}
+
 .dark-mode .df-bg {
   background-color: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
@@ -527,7 +530,8 @@ section.headp-hero-area-start {
 
 .dark-mode .headp-why-shoose-area-start,
 .dark-mode .headp-newslater-area-start,
-.dark-mode .headp-contact-area-start {
+.dark-mode .headp-contact-area-start,
+.dark-mode .mobile-menu-area {
   background-color: var(--dark-mode-background-color) !important;
   background: url("");
 }
@@ -810,7 +814,11 @@ ul.choose-list li .media-body h4 {
   text-transform: capitalize;
   margin-bottom: 18px;
 }
-
+.media-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .headp-product-slider {
   padding: 15px;
   height: 56vh;
@@ -1271,4 +1279,51 @@ footer.footer-area-start ul.social-lists li a.linkedin {
 
 footer.footer-area-start ul.social-lists li a.youtube {
   background: #ff0202;
+}
+/* 
+
+ */
+
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.drawer-menu.open {
+  transform: translateX(0);
+}
+
+.drawer-menu-content {
+  height: 100%;
+  /* padding: 20px; */
+  background-color: #ffffff;
+}
+.dark-mode .drawer-menu-content {
+  background-color: var(--dark-mode-background-color);
+}
+
+.drawer-menu-content ul li {
+  padding: 0 6px;
+  margin: 10px 0;
+}
+.drawer-menu-content ul.main-menu-area li {
+  display: block;
+  text-transform: capitalize;
+  border-bottom: 1px solid #888;
+}
+
+.drawer-menu-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }

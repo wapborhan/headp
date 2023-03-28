@@ -81,7 +81,7 @@ const Product = () => {
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div className="d-flex">
+                        <div className="md-d-flex">
                           <div className="flex-shrink-1">
                             <a href="#">
                               <img src={item.img} alt="product" />

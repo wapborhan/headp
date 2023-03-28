@@ -4,6 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import "./assets/css/drawer.min.css";
 import "./assets/css/animate.min.css";
 import "./assets/css/pro.min.css";
 import "./assets/css/style.css";
