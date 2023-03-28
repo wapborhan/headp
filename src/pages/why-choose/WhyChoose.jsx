@@ -91,30 +91,30 @@ const WhyChoose = () => {
                   <i className="fal fa-shopping-bag"></i> shop now
                 </a>
               </div>
-              <div
+              {/* <div
                 className="headp-single-product animateupdown mouse-move"
                 // style="background: url('assets/images/product-2.png') no-repeat scroll center center / contain"
               >
                 <a href="#" className="df-btn">
                   <i className="fal fa-shopping-bag"></i> shop now
                 </a>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="headp-single-product animateupdown mouse-move"
                 // style="background: url('assets/images/product-3.png') no-repeat scroll center center / contain"
               >
                 <a href="#" className="df-btn">
                   <i className="fal fa-shopping-bag"></i> shop now
                 </a>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="headp-single-product animateupdown mouse-move"
                 // style="background: url('assets/images/product-4.png') no-repeat scroll center center / contain"
               >
                 <a href="#" className="df-btn">
                   <i className="fal fa-shopping-bag"></i> shop now
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <!--Product slider area end--> */}
