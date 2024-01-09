@@ -19,6 +19,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header
       ref={headerRef}
@@ -30,10 +31,9 @@ const Header = () => {
         <div className="row">
           <div className="col-md-3">
             <div className="headp-logo-area-start">
-              {" "}
-              <a href="index-2.html">
+              <a href="/">
                 <img src={HeadImg} alt="headp-official-logo" />
-              </a>{" "}
+              </a>
             </div>
           </div>
           <div className="col-md-9">
